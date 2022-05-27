@@ -49,7 +49,7 @@ const Hero = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid item container style={{ position: "relative", bottom: "24rem" }} spacing={5} justifyContent={"center"}>
+        <Grid item container style={{ position: "relative", bottom: "22.5rem" }} spacing={5} justifyContent={"center"}>
           <Grid item md={3}>
             <RoundLabels  icon={"heart"} />
           </Grid>

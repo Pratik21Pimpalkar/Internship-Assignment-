@@ -14,11 +14,11 @@ const RoundDiv = {
 const RoundLabels = ({icon}) => {
   return <div className="roundLabels" style={RoundDiv}>
       {
-          icon==="heart"? <FavoriteBorderIcon  style={{position:"absolute",fontSize:"1.7rem",fill:"#0259EB", top:"50%",left:"50%", color:"white",transform:"translate(-50%, -186%)"}}/>:<AddchartIcon  style={{position:"absolute",fontSize:"1.7rem", top:"50%",left:"50%", color:"white",transform:"translate(-50%, -186%)"}}/>
+          icon==="heart"? <FavoriteBorderIcon  style={{position:"absolute",fontSize:"1.7rem",fill:"#0259EB", top:"50%",left:"50%", color:"white",transform:"translate(-50%, -186%)"}}/>:<AddchartIcon  style={{position:"absolute",fontSize:"1.7rem", top:"50%",left:"50%", color:"#ffffff99",transform:"translate(-50%, -186%)"}}/>
       }
       {/* <FavoriteBorderIcon/> */}
       <Typography variant="subtitle1"  style={{position:"absolute",fontSize:"1.3rem", top:"50%",left:"50%", color:"white",transform:"translate(-50%, -50%)"}}>0</Typography>
-      <Typography variant="overline" style={{position:"absolute", top:"50%",left:"50%", color:"white",transform:"translate(-50%, 50%)"}}>Label</Typography>
+      <Typography variant="body1" style={{position:"absolute", top:"50%",left:"50%", color:"#ffffff99",transform:"translate(-50%, 75%)"}}>Label</Typography>
   </div>;
 };
 
