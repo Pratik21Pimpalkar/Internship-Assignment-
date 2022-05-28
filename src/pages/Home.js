@@ -9,17 +9,17 @@ import ReviewCardWrapper from "../components/ReviewCardWrapper";
 const Home = () => {
   return (
     <>
-      <section>
         <Navbar />
+      <section className="Hero">
         <Hero />
       </section>
       <section>
         <Container maxWidth={"lg"}>
-          <Heading title={"Upcoming Shows"}/>
+          <Heading title={"Upcoming Shows"} toggle={'yes'}/>
           <ShowsCardWrapper />
         </Container>
       </section>
-      <section style={{marginBottom:"8rem"}}>
+      <section style={{marginBottom:"8rem"}} toggle={null}>
         <Container maxWidth={"lg"}>
           <Heading title={"Reviews"} />
           <ReviewCardWrapper />

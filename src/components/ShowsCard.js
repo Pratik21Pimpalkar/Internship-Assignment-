@@ -32,6 +32,8 @@ const gradient = {
   boxShadow: " 0px 4px 16px rgba(0, 0, 0, 0.85)",
   height: "24rem",
   width: "16.75rem",
+  marginBottom: "2rem",
+  marginLeft:"2rem",
   borderRadius: "0.5rem",
   position: "relative",
   background: "linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%)",
@@ -42,7 +44,7 @@ const moreInfo = {
   fontWeight: "600",
   fontSize: "1rem",
   position: "relative",
-  cursor: "pointer",
+  cursor: `pointer`
 };
 const cardWrapper = {
   width: "100%",
@@ -59,8 +61,8 @@ const ShowsCard = ({data}) => {
     <>
       <div style={gradient}>
         <div style={cardWrapper}>
-          <div style={{ width: "100%", display: "flex" }}>
-            <img src={data.img} alt="" style={{ width: "100%", height: "100%" }} />
+          <div style={{ width: "100%",height:"14.375rem", display: "flex" }}>
+            <img src={data.img} alt="" style={{ width: "100%", height: "100%",objectFit:"cover",borderRadius:"0.5rem" }} />
           </div>
           <div style={{ backgroundColor: "#111229", padding: "1rem" }}>
             <div>
@@ -70,7 +72,7 @@ const ShowsCard = ({data}) => {
               </Typography>
             </div>
             <div style={{ margin: "1.7rem 0px 0.81rem 0" }}>
-              <Typography variant="body2" style={moreInfo}>
+              <Typography className="pointerCursor" variant="body2" style={moreInfo}>
                 More Info
                 <span style={{ position: "absolute", marginLeft: "0.21rem" }}>
                   <ArrowForwardIcon />

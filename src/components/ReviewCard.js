@@ -11,6 +11,8 @@ const ReviewCard = ({ data }) => {
         position: "relative",
         width: "22.5rem",
         height: "15.5rem",
+  marginBottom: "2rem",
+marginLeft:"2rem"
       }}
     >
       <div
