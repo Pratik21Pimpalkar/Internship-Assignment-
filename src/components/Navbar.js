@@ -59,13 +59,13 @@ const Navbar = () => {
               <Button
                 color="inherit"
                 className="pointerCursor"
-                display={{ lg: "block", md: "none" }}
+                display={{ md: "block", xs: "none" }}
                 style={NavlinksStyle}
               >
                 Help
               </Button>
             </Box>
-            <Box display={{ lg: "block", xs: "none" }}>
+            <Box display={{ md: "block", xs: "none" }}>
               <Button
                 color="inherit"
                 className="pointerCursor"
@@ -81,7 +81,7 @@ const Navbar = () => {
             >
               <img src={box} alt="" srcSet="" />
             </Button>
-            <Box display={{ md: "block", lg: "none" }}>
+            <Box display={{ xs: "block", md: "none" }}>
               {!menu ? (
                 <MenuIcon onClick={handleMenu} style={{ fontSize: "1.7rem" }} />
               ) : (
