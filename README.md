@@ -1,3 +1,13 @@
+# Homejam landing page using React JS
+
+## Website Link : https://homejam-cfe23.web.app
+
+### Libraries Used
+#### MUI, Swiper, React-country-Icons
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
