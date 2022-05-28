@@ -1,18 +1,15 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 import "swiper/css";
-import ShowsCard from "./ShowsCard";
-import UpcomingShowsData from "../Data/UpcomingShowData";
-const ShowsCardWrapper = () => {
+import ReviewCard from "./ReviewCard";
+import ReviewData from "../Data/ReviewData";
+
+const ReviewCardWrapper = () => {
   return (
-    <div>
+    <>
       <Swiper
-        slidesPerView={30}
-        loop={true}
+        slidesPerView={2}
         navigation={true}
         breakpoints={{
           200: {
@@ -25,28 +22,24 @@ const ShowsCardWrapper = () => {
             slidesPerView: 2,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
-        }}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
       >
-        {UpcomingShowsData.map((data, key) => {
+        {ReviewData.map((data, key) => {
           return (
             <SwiperSlide key={key}>
-              <ShowsCard data={data} />
+              <ReviewCard data={data} />
             </SwiperSlide>
           );
         })}
       </Swiper>
-    </div>
+    </>
   );
 };
 
-export default ShowsCardWrapper;
+export default ReviewCardWrapper;
